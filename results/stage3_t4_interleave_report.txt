@@ -1,0 +1,9 @@
+=== T4 interference: interleaved A+B (LMS lr=0.50 decay=2.0e-03 1600 steps) ===
+metric                   CE recall overlap
+baseline-A            8.354      0      0
+baseline-B            8.461      0      0
+interleaved-A         6.236      0      7
+interleaved-B         6.644      0      5
+
+对照 T2 顺序学习: 无重放 A 9.668/B 6.401 | 重放20%% A 7.177/B 6.532
+并行 vs 顺序+重放: A -0.941 / B +0.112

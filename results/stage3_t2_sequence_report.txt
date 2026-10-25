@@ -1,0 +1,9 @@
+=== T2 sequence memory A->B->A (LMS lr=0.50 decay=2.0e-03 dev=cuda) ===
+phase                  CE recall overlap
+baseline-A          8.354      0      0
+baseline-B          8.461      0      0
+after-A             5.648      0      3
+after-B(A-test)     7.177      0      2
+after-B(B-test)     6.532      0      3
+relearn-A           6.682      0      6
+遗忘(A): CE ++1.529 | 重学恢复: CE -0.495 | savings=62%
