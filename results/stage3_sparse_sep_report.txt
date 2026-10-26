@@ -1,0 +1,17 @@
+=== Stage3 稀疏表示 / pattern separation（DG 模拟）===
+扩展维 1536；拟合=后缀裁剪 324 样本；主指标=PROMPTS 诚实 acc（基线 0.81）
+变体                     窗口集          PROMPTS      类均值cos(max)
+raw                    1.00         0.81         0.278
+ksparse-1%             0.93         0.38         0.121
+ksparse-2%             0.96         0.56         0.184
+ksparse-5%             0.96         0.38         0.250
+ksparse-10%            1.00         0.44         0.197
+ksparse-25%            1.00         0.56         0.268
+expand-1%              1.00         0.81         0.325
+expand-2%              0.93         0.81         0.348
+expand-5%              1.00         0.81         0.228
+expand-10%             1.00         0.88         0.280
+expand-25%             1.00         0.69         0.304
+
+最优: expand-10% (PROMPTS 0.88) vs raw 0.81 —— 若显著提升则 pattern separation 假设成立，稀疏编码=路由破局的表示层正解
+(50s, dev=cuda)

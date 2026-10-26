@@ -1,0 +1,27 @@
+=== Stage4 前向 k-sparse（结构压力稀疏）===
+教师对微调 1000 步 batch16 lr2e-05；密集基线 routing 0.81
+
+[noFT-25%] 监控CE 6.479 | 活跃率 0.250 | routing 0.69
+  混淆: A→D3,A1 | B→B4 | C→C3,B1 | D→A1,D3
+
+[ft-25%] 监控CE 6.260 | 活跃率 0.250 | routing 0.62
+  混淆: A→D3,A1 | B→B4 | C→C4 | D→A3,D1
+  curve: s1:tr5.92 va6.48 act0.25 | s250:tr5.31 va6.31 act0.25 | s500:tr5.19 va6.28 act0.25 | s750:tr5.68 va6.26 act0.25 | s1000:tr5.43 va6.26 act0.25
+
+[noFT-10%] 监控CE 6.788 | 活跃率 0.100 | routing 0.44
+  混淆: A→D3,A1 | B→B4 | C→B4 | D→A2,D2
+
+[ft-10%] 监控CE 6.341 | 活跃率 0.100 | routing 0.56
+  混淆: A→D3,A1 | B→B4 | C→C3,B1 | D→D1,A3
+  curve: s1:tr6.27 va6.78 act0.10 | s250:tr5.85 va6.50 act0.10 | s500:tr5.73 va6.44 act0.10 | s750:tr5.95 va6.38 act0.10 | s1000:tr5.98 va6.34 act0.10
+
+[noFT-5%] 监控CE 7.025 | 活跃率 0.049 | routing 0.38
+  混淆: A→D3,A1 | B→B4 | C→B4 | D→A1,D1,B2
+
+[ft-5%] 监控CE 6.445 | 活跃率 0.049 | routing 0.56
+  混淆: A→A2,D2 | B→B4 | C→B2,C2 | D→D1,A2,B1
+  curve: s1:tr6.65 va7.03 act0.05 | s250:tr6.26 va6.66 act0.05 | s500:tr6.15 va6.56 act0.05 | s750:tr6.20 va6.50 act0.05 | s1000:tr6.32 va6.45 act0.05
+
+判读: noFT routing>0.81 → 稀疏本身即 pattern separation（DG 立即生效）；
+noFT 差但 ft 恢复并超越 → 稀疏码需发育（SNN 训练中发育假说）；
+两者都 ≤0.81 → 512 维 top-k 太粗，需扩大维度再稀疏（真 DG 扩展）。

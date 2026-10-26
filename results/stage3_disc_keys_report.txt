@@ -1,0 +1,15 @@
+=== Stage3 判别性任务键（LDA/QDA 路由）===
+拟合样本：后缀裁剪 len 24..112 step 8；评估集：任务窗 + PROMPTS（未见文本）
+类均值区分度:
+  原始: AB 0.942 AC 0.951 AD 0.968 BC 0.937 BD 0.939 CD 0.948
+  中心化: AB -0.984 AC 0.039 AD 0.247 BC -0.189 BD -0.377 CD 0.278
+
+路由器         窗口LOO      PROMPTS    prompt边距  
+cos-mean    0.92       0.75       0.031     
+cos-center  0.88       0.81       0.254     
+LDA         0.96       0.81       196.789   
+QDA         0.96       0.50       2965.289  
+
+cos-mean PROMPTS 混淆: A→D3,A1 | B→B4 | C→C4 | D→D3,A1
+LDA PROMPTS 混淆: A→A2,D2 | B→B4 | C→C4 | D→D3,A1
+(48s, dev=cuda)

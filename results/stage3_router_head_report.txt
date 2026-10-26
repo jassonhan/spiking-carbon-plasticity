@@ -1,0 +1,14 @@
+=== Stage3 可训练线性路由头 vs 闭式基线 ===
+路由器          窗口集            PROMPTS(诚实)     
+cos-mean     acc 0.93 marg 0.040 | acc 0.75 marg 0.031
+cos-center   acc 0.89 marg 0.494 | acc 0.81 marg 0.254
+LDA          acc 1.00 marg 181.575 | acc 0.81 marg 196.789
+router-head  acc 1.00 marg 8.667 | acc 0.81 marg 5.218
+
+cos-mean PROMPTS 混淆: A→D3,A1 | B→B4 | C→C4 | D→D3,A1
+cos-center PROMPTS 混淆: A→D3,A1 | B→B4 | C→C4 | D→D4
+LDA PROMPTS 混淆: A→A2,D2 | B→B4 | C→C4 | D→D3,A1
+router-head PROMPTS 混淆: A→A2,D2 | B→B4 | C→C4 | D→A1,D3
+
+路由头拟合 acc 1.000（训练=裁剪集，注意与 PROMPTS 泛化差 = 过拟合度）
+(50s, dev=cuda)

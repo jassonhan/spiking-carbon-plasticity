@@ -1,0 +1,9 @@
+=== Stage4 任务感知表示训练（CE + λc·SupCon, tau=0.10）===
+批: 16 教师窗(CE) + 8 任务窗(SupCon)，3000 步 lr2e-05；密集基线 routing 0.81（4 任务）/ zoo 待测
+
+[lam=1.0] 监控CE 6.140 | 16任务 PROMPTS routing 0.84
+  混淆: A→A4 | B→B4 | C→C4 | D→L1,D3 | E→E2,P1,K1 | F→F4 | G→G4 | H→P3,H1 | I→I4 | J→J4 | K→K3,E1 | L→L4 | M→M4 | N→N4 | O→O3,L1 | P→P2,M1,N1
+  curve: s1:ce5.40 sc0.00 mon6.08 | s250:ce5.31 sc0.06 mon6.10 | s500:ce5.33 sc0.08 mon6.12 | s750:ce4.67 sc0.03 mon6.13 | s1000:ce5.32 sc0.11 mon6.12 | s1250:ce5.23 sc0.00 mon6.12 | s1500:ce5.10 sc0.03 mon6.12 | s1750:ce4.79 sc0.00 mon6.12 | s2000:ce5.24 sc0.00 mon6.13 | s2250:ce5.16 sc0.02 mon6.13 | s2500:ce5.09 sc0.00 mon6.14 | s2750:ce5.14 sc1.11 mon6.12 | s3000:ce4.87 sc0.00 mon6.14
+
+判读: routing 显著>0.81 → 表示可被任务感知目标塑造；
+监控 CE 相对 6.08 的退化幅度 = 对比损失的语言代价。

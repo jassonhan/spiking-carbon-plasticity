@@ -1,0 +1,50 @@
+[data] teacher 18600 win | zoo 94 win, 16 tasks
+C:\Users\Jasson Han\WorkBuddy\2026-09-12-19-37-16\stage4_contrast.py:121: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  curve.append((step, float(ce), float(lc), vce))
+  [lam=1.0] step 1 ce 5.398 supcon 0.000 mon 6.078 (4s)
+  [lam=1.0] step 250 ce 5.306 supcon 0.055 mon 6.103 (318s)
+  [lam=1.0] step 500 ce 5.331 supcon 0.076 mon 6.119 (633s)
+  [lam=1.0] step 750 ce 4.673 supcon 0.029 mon 6.128 (950s)
+  [lam=1.0] step 1000 ce 5.322 supcon 0.107 mon 6.119 (1264s)
+  [lam=1.0] step 1250 ce 5.235 supcon 0.000 mon 6.115 (1578s)
+  [lam=1.0] step 1500 ce 5.103 supcon 0.027 mon 6.122 (1894s)
+  [lam=1.0] step 1750 ce 4.789 supcon 0.000 mon 6.121 (2208s)
+  [lam=1.0] step 2000 ce 5.244 supcon 0.005 mon 6.126 (2526s)
+  [lam=1.0] step 2250 ce 5.161 supcon 0.022 mon 6.134 (2839s)
+  [lam=1.0] step 2500 ce 5.087 supcon 0.003 mon 6.137 (3154s)
+  [lam=1.0] step 2750 ce 5.142 supcon 1.111 mon 6.121 (3471s)
+  [lam=1.0] step 3000 ce 4.871 supcon 0.002 mon 6.140 (3785s)
+[sample] A: fit 156 | wins 13 | prompts 4
+[sample] B: fit 144 | wins 12 | prompts 4
+[sample] C: fit 12 | wins 1 | prompts 4
+[sample] D: fit 12 | wins 1 | prompts 4
+[sample] E: fit 132 | wins 11 | prompts 4
+[sample] F: fit 60 | wins 5 | prompts 4
+[sample] G: fit 60 | wins 5 | prompts 4
+[sample] H: fit 60 | wins 5 | prompts 4
+[sample] I: fit 60 | wins 5 | prompts 4
+[sample] J: fit 72 | wins 6 | prompts 4
+[sample] K: fit 60 | wins 5 | prompts 4
+[sample] L: fit 60 | wins 5 | prompts 4
+[sample] M: fit 60 | wins 5 | prompts 4
+[sample] N: fit 60 | wins 5 | prompts 4
+[sample] O: fit 60 | wins 5 | prompts 4
+[sample] P: fit 60 | wins 5 | prompts 4
+    epoch 0 loss 2.7726 fit-acc 0.138
+    epoch 100 loss 0.0037 fit-acc 1.000
+    epoch 200 loss 0.0032 fit-acc 1.000
+    epoch 300 loss 0.0030 fit-acc 1.000
+    epoch 400 loss 0.0029 fit-acc 1.000
+    epoch 499 loss 0.0029 fit-acc 1.000
+[lam=1.0] done mon 6.140 routing 0.84
+=== Stage4 任务感知表示训练（CE + λc·SupCon, tau=0.10）===
+批: 16 教师窗(CE) + 8 任务窗(SupCon)，3000 步 lr2e-05；密集基线 routing 0.81（4 任务）/ zoo 待测
+
+[lam=1.0] 监控CE 6.140 | 16任务 PROMPTS routing 0.84
+  混淆: A→A4 | B→B4 | C→C4 | D→L1,D3 | E→E2,P1,K1 | F→F4 | G→G4 | H→P3,H1 | I→I4 | J→J4 | K→K3,E1 | L→L4 | M→M4 | N→N4 | O→O3,L1 | P→P2,M1,N1
+  curve: s1:ce5.40 sc0.00 mon6.08 | s250:ce5.31 sc0.06 mon6.10 | s500:ce5.33 sc0.08 mon6.12 | s750:ce4.67 sc0.03 mon6.13 | s1000:ce5.32 sc0.11 mon6.12 | s1250:ce5.23 sc0.00 mon6.12 | s1500:ce5.10 sc0.03 mon6.12 | s1750:ce4.79 sc0.00 mon6.12 | s2000:ce5.24 sc0.00 mon6.13 | s2250:ce5.16 sc0.02 mon6.13 | s2500:ce5.09 sc0.00 mon6.14 | s2750:ce5.14 sc1.11 mon6.12 | s3000:ce4.87 sc0.00 mon6.14
+
+判读: routing 显著>0.81 → 表示可被任务感知目标塑造；
+监控 CE 相对 6.08 的退化幅度 = 对比损失的语言代价。
+[saved] C:\Users\Jasson Han\WorkBuddy\2026-09-12-19-37-16\SNN34_distill\stage4_contrast_report.txt

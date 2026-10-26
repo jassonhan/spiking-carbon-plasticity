@@ -1,0 +1,11 @@
+=== Stage4 稀疏微调 pilot（CE + λ·L1(h)）===
+起步: snn34_final (val 5.244)；1000 步 batch16 lr2e-05
+
+[lam=0 (未微调基线)] 监控CE 6.079 | PROMPTS routing 0.81
+
+[lam=1e-01] val CE 6.168 (Δ+0.088) | PROMPTS routing 0.81
+  混淆: A→A2,D2 | B→B4 | C→C4 | D→A1,D3
+  curve: s1:tr5.40 va6.08 act1.00 | s250:tr4.76 va6.14 act1.00 | s500:tr4.53 va6.15 act1.00 | s750:tr5.42 va6.16 act1.00 | s1000:tr4.94 va6.17 act1.00
+
+判读: 监控CE 相对 lam=0 臂退化 <+0.2 为守住语言能力（注意监控集 in-sample，只看臂间相对）；
+routing 显著 >0.81 → 稀疏发育成功，pattern separation 可端到端学出（bolt-on 判负的镜像证明）。

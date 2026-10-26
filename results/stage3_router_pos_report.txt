@@ -1,0 +1,12 @@
+=== Stage3 逐位置证据池化路由 ===
+拟合：全窗+裁剪逐位置 h (stride 8)，共 2754 样本
+路由器              窗口集                        PROMPTS(诚实)               
+pos-logitmean    acc 1.00 marg 8.623    | acc 0.75 marg 4.973   
+pos-posterior    acc 1.00 marg 8.623    | acc 0.75 marg 4.973   
+pos-vote         acc 1.00 marg 8.623    | acc 0.75 marg 3.000   
+
+pos-logitmean 混淆: A→A2,D2 | B→B4 | C→C3,D1 | D→D3,A1
+pos-posterior 混淆: A→A2,D2 | B→B4 | C→C3,D1 | D→D3,A1
+pos-vote 混淆: A→A2,D2 | B→B4 | C→C3,D1 | D→D3,A1
+逐位置头拟合 acc 1.000
+(38s, dev=cuda)
