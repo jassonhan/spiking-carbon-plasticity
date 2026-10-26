@@ -54,3 +54,12 @@ python stage3_zoo_stream.py --ckpt <contrast_ckpt>  # 16 任务零漂移验证
 ```
 
 依赖见 requirements.txt；权重与语料未入库（体积），实验报告全量见 `results/`。
+
+
+## 追补：24 任务扩程（zoo 二期，同日晚）
+
+新增 Q 面包房 / R 理发店 / S 花店 / T 露营 / U 演播厅 / V 洗衣店 / W 天文馆 / X 古董店：
+
+- **23/24 任务精确零漂移，平均 −0.003**（全部已见任务学习 acc 1.00）
+- **扩程曲线定稿：4→8→16→24 = +0.004 → +0.046 → −0.006 → −0.003**，任务数 6 倍于初版零退化
+- 脚本：`stage3_zoo24.py` / `stage3_zoo24_stream.py`；报告：`results/stage3_stream24_report.txt`
