@@ -1,0 +1,118 @@
+[data] teacher 18600 win | zoo 94 win, 16 tasks
+C:\Users\Jasson Han\WorkBuddy\2026-09-12-19-37-16\stage4_contrast.py:121: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  curve.append((step, float(ce), float(lc), vce))
+  [lam=1.0] step 1 ce 5.398 supcon 0.000 mon 6.078 (4s)
+  [lam=1.0] step 250 ce 5.306 supcon 0.055 mon 6.103 (352s)
+  [lam=1.0] step 500 ce 5.331 supcon 0.076 mon 6.119 (699s)
+  [lam=1.0] step 750 ce 4.673 supcon 0.029 mon 6.128 (1052s)
+  [lam=1.0] step 1000 ce 5.322 supcon 0.107 mon 6.119 (1403s)
+  [lam=1.0] step 1250 ce 5.235 supcon 0.000 mon 6.115 (1751s)
+  [lam=1.0] step 1500 ce 5.103 supcon 0.027 mon 6.122 (2103s)
+  [lam=1.0] step 1750 ce 4.789 supcon 0.000 mon 6.121 (2453s)
+  [lam=1.0] step 2000 ce 5.244 supcon 0.005 mon 6.126 (2803s)
+  [lam=1.0] step 2250 ce 5.161 supcon 0.022 mon 6.134 (3151s)
+  [lam=1.0] step 2500 ce 5.087 supcon 0.003 mon 6.137 (3503s)
+  [lam=1.0] step 2750 ce 5.142 supcon 1.111 mon 6.121 (3850s)
+  [lam=1.0] step 3000 ce 4.871 supcon 0.002 mon 6.140 (4202s)
+  [lam=1.0] step 3250 ce 5.035 supcon 0.027 mon 6.139 (4555s)
+  [lam=1.0] step 3500 ce 5.270 supcon 0.700 mon 6.136 (4908s)
+  [lam=1.0] step 3750 ce 5.392 supcon 0.719 mon 6.136 (5258s)
+  [lam=1.0] step 4000 ce 5.083 supcon 0.000 mon 6.140 (5606s)
+  [lam=1.0] step 4250 ce 4.880 supcon 0.452 mon 6.139 (5959s)
+  [lam=1.0] step 4500 ce 5.277 supcon 0.012 mon 6.134 (6311s)
+  [lam=1.0] step 4750 ce 5.378 supcon 0.005 mon 6.147 (6664s)
+  [lam=1.0] step 5000 ce 5.455 supcon 0.005 mon 6.147 (7020s)
+  [lam=1.0] step 5250 ce 5.259 supcon 0.001 mon 6.151 (7373s)
+  [lam=1.0] step 5500 ce 5.089 supcon 0.003 mon 6.139 (7725s)
+  [lam=1.0] step 5750 ce 5.112 supcon 0.002 mon 6.142 (8079s)
+  [lam=1.0] step 6000 ce 5.304 supcon 0.005 mon 6.140 (8429s)
+  [lam=1.0] step 6250 ce 5.309 supcon 0.696 mon 6.142 (8779s)
+  [lam=1.0] step 6500 ce 5.155 supcon 0.011 mon 6.150 (9133s)
+  [lam=1.0] step 6750 ce 4.977 supcon 0.000 mon 6.151 (9484s)
+  [lam=1.0] step 7000 ce 5.089 supcon 0.704 mon 6.153 (9837s)
+  [lam=1.0] step 7250 ce 4.833 supcon 0.013 mon 6.159 (10192s)
+  [lam=1.0] step 7500 ce 4.967 supcon 0.546 mon 6.152 (10536s)
+  [lam=1.0] step 7750 ce 5.010 supcon 0.871 mon 6.156 (10884s)
+  [lam=1.0] step 8000 ce 5.255 supcon 0.754 mon 6.163 (11232s)
+  [lam=1.0] step 8250 ce 5.040 supcon 0.001 mon 6.162 (11579s)
+  [lam=1.0] step 8500 ce 4.970 supcon 0.010 mon 6.163 (11928s)
+  [lam=1.0] step 8750 ce 5.382 supcon 0.419 mon 6.170 (12272s)
+  [lam=1.0] step 9000 ce 5.124 supcon 0.005 mon 6.156 (12618s)
+  [lam=1.0] step 9250 ce 5.441 supcon 0.734 mon 6.164 (12961s)
+  [lam=1.0] step 9500 ce 5.295 supcon 0.001 mon 6.161 (13307s)
+  [lam=1.0] step 9750 ce 4.752 supcon 0.001 mon 6.163 (13654s)
+  [lam=1.0] step 10000 ce 5.105 supcon 0.005 mon 6.158 (14000s)
+  [lam=1.0] step 10250 ce 5.120 supcon 0.419 mon 6.169 (14347s)
+  [lam=1.0] step 10500 ce 4.589 supcon 0.005 mon 6.168 (14690s)
+  [lam=1.0] step 10750 ce 5.414 supcon 0.009 mon 6.161 (15040s)
+  [lam=1.0] step 11000 ce 5.073 supcon 0.000 mon 6.171 (15387s)
+  [lam=1.0] step 11250 ce 5.169 supcon 0.003 mon 6.167 (15736s)
+  [lam=1.0] step 11500 ce 5.071 supcon 0.004 mon 6.166 (16083s)
+  [lam=1.0] step 11750 ce 4.747 supcon 0.000 mon 6.164 (16427s)
+  [lam=1.0] step 12000 ce 4.914 supcon 0.003 mon 6.164 (16773s)
+  [lam=1.0] step 12250 ce 5.428 supcon 0.009 mon 6.171 (17120s)
+  [lam=1.0] step 12500 ce 4.944 supcon 0.000 mon 6.175 (17461s)
+  [lam=1.0] step 12750 ce 5.202 supcon 0.004 mon 6.171 (17809s)
+  [lam=1.0] step 13000 ce 5.294 supcon 0.010 mon 6.164 (18156s)
+  [lam=1.0] step 13250 ce 4.956 supcon 0.004 mon 6.167 (18503s)
+  [lam=1.0] step 13500 ce 4.851 supcon 0.002 mon 6.171 (18846s)
+  [lam=1.0] step 13750 ce 5.317 supcon 0.299 mon 6.166 (19197s)
+  [lam=1.0] step 14000 ce 5.062 supcon 0.592 mon 6.167 (19546s)
+  [lam=1.0] step 14250 ce 5.002 supcon 0.008 mon 6.176 (19894s)
+  [lam=1.0] step 14500 ce 5.126 supcon 0.735 mon 6.168 (20241s)
+  [lam=1.0] step 14750 ce 5.353 supcon 0.001 mon 6.173 (20594s)
+  [lam=1.0] step 15000 ce 5.434 supcon 0.002 mon 6.164 (20948s)
+  [lam=1.0] step 15250 ce 5.445 supcon 0.002 mon 6.174 (21299s)
+  [lam=1.0] step 15500 ce 5.132 supcon 0.006 mon 6.174 (21652s)
+  [lam=1.0] step 15750 ce 4.628 supcon 0.464 mon 6.165 (22001s)
+  [lam=1.0] step 16000 ce 5.090 supcon 0.417 mon 6.186 (22345s)
+  [lam=1.0] step 16250 ce 5.351 supcon 0.006 mon 6.176 (22694s)
+  [lam=1.0] step 16500 ce 5.259 supcon 0.001 mon 6.177 (23044s)
+  [lam=1.0] step 16750 ce 4.877 supcon 0.004 mon 6.176 (23395s)
+  [lam=1.0] step 17000 ce 5.115 supcon 0.002 mon 6.186 (23749s)
+  [lam=1.0] step 17250 ce 4.662 supcon 0.000 mon 6.183 (24101s)
+  [lam=1.0] step 17500 ce 5.313 supcon 0.001 mon 6.178 (24450s)
+  [lam=1.0] step 17750 ce 4.982 supcon 0.001 mon 6.189 (24800s)
+  [lam=1.0] step 18000 ce 4.885 supcon 0.417 mon 6.188 (25154s)
+  [lam=1.0] step 18250 ce 5.143 supcon 0.002 mon 6.189 (25505s)
+  [lam=1.0] step 18500 ce 4.968 supcon 0.009 mon 6.189 (25859s)
+  [lam=1.0] step 18750 ce 4.797 supcon 0.001 mon 6.187 (26210s)
+  [lam=1.0] step 19000 ce 4.873 supcon 0.001 mon 6.182 (26564s)
+  [lam=1.0] step 19250 ce 4.993 supcon 0.003 mon 6.185 (26913s)
+  [lam=1.0] step 19500 ce 5.347 supcon 0.003 mon 6.194 (27265s)
+  [lam=1.0] step 19750 ce 5.114 supcon 0.002 mon 6.199 (27615s)
+  [lam=1.0] step 20000 ce 5.053 supcon 0.000 mon 6.190 (27963s)
+[sample] A: fit 156 | wins 13 | prompts 4
+[sample] B: fit 144 | wins 12 | prompts 4
+[sample] C: fit 12 | wins 1 | prompts 4
+[sample] D: fit 12 | wins 1 | prompts 4
+[sample] E: fit 132 | wins 11 | prompts 4
+[sample] F: fit 60 | wins 5 | prompts 4
+[sample] G: fit 60 | wins 5 | prompts 4
+[sample] H: fit 60 | wins 5 | prompts 4
+[sample] I: fit 60 | wins 5 | prompts 4
+[sample] J: fit 72 | wins 6 | prompts 4
+[sample] K: fit 60 | wins 5 | prompts 4
+[sample] L: fit 60 | wins 5 | prompts 4
+[sample] M: fit 60 | wins 5 | prompts 4
+[sample] N: fit 60 | wins 5 | prompts 4
+[sample] O: fit 60 | wins 5 | prompts 4
+[sample] P: fit 60 | wins 5 | prompts 4
+    epoch 0 loss 2.7726 fit-acc 0.138
+    epoch 100 loss 0.0026 fit-acc 1.000
+    epoch 200 loss 0.0023 fit-acc 1.000
+    epoch 300 loss 0.0022 fit-acc 1.000
+    epoch 400 loss 0.0022 fit-acc 1.000
+    epoch 499 loss 0.0022 fit-acc 1.000
+[lam=1.0] done mon 6.190 routing 0.92
+=== Stage4 任务感知表示训练（CE + λc·SupCon, tau=0.10）===
+批: 16 教师窗(CE) + 8 任务窗(SupCon)，20000 步 lr2e-05；密集基线 routing 0.81（4 任务）/ zoo 待测
+
+[lam=1.0] 监控CE 6.190 | 16任务 PROMPTS routing 0.92
+  混淆: A→A4 | B→B4 | C→C4 | D→L1,D3 | E→E2,K2 | F→F4 | G→G4 | H→H4 | I→I4 | J→J4 | K→K3,F1 | L→L4 | M→M4 | N→N4 | O→O4 | P→P3,M1
+  curve: s1:ce5.40 sc0.00 mon6.08 | s250:ce5.31 sc0.06 mon6.10 | s500:ce5.33 sc0.08 mon6.12 | s750:ce4.67 sc0.03 mon6.13 | s1000:ce5.32 sc0.11 mon6.12 | s1250:ce5.23 sc0.00 mon6.12 | s1500:ce5.10 sc0.03 mon6.12 | s1750:ce4.79 sc0.00 mon6.12 | s2000:ce5.24 sc0.00 mon6.13 | s2250:ce5.16 sc0.02 mon6.13 | s2500:ce5.09 sc0.00 mon6.14 | s2750:ce5.14 sc1.11 mon6.12 | s3000:ce4.87 sc0.00 mon6.14 | s3250:ce5.04 sc0.03 mon6.14 | s3500:ce5.27 sc0.70 mon6.14 | s3750:ce5.39 sc0.72 mon6.14 | s4000:ce5.08 sc0.00 mon6.14 | s4250:ce4.88 sc0.45 mon6.14 | s4500:ce5.28 sc0.01 mon6.13 | s4750:ce5.38 sc0.01 mon6.15 | s5000:ce5.45 sc0.01 mon6.15 | s5250:ce5.26 sc0.00 mon6.15 | s5500:ce5.09 sc0.00 mon6.14 | s5750:ce5.11 sc0.00 mon6.14 | s6000:ce5.30 sc0.00 mon6.14 | s6250:ce5.31 sc0.70 mon6.14 | s6500:ce5.15 sc0.01 mon6.15 | s6750:ce4.98 sc0.00 mon6.15 | s7000:ce5.09 sc0.70 mon6.15 | s7250:ce4.83 sc0.01 mon6.16 | s7500:ce4.97 sc0.55 mon6.15 | s7750:ce5.01 sc0.87 mon6.16 | s8000:ce5.26 sc0.75 mon6.16 | s8250:ce5.04 sc0.00 mon6.16 | s8500:ce4.97 sc0.01 mon6.16 | s8750:ce5.38 sc0.42 mon6.17 | s9000:ce5.12 sc0.00 mon6.16 | s9250:ce5.44 sc0.73 mon6.16 | s9500:ce5.30 sc0.00 mon6.16 | s9750:ce4.75 sc0.00 mon6.16 | s10000:ce5.10 sc0.00 mon6.16 | s10250:ce5.12 sc0.42 mon6.17 | s10500:ce4.59 sc0.00 mon6.17 | s10750:ce5.41 sc0.01 mon6.16 | s11000:ce5.07 sc0.00 mon6.17 | s11250:ce5.17 sc0.00 mon6.17 | s11500:ce5.07 sc0.00 mon6.17 | s11750:ce4.75 sc0.00 mon6.16 | s12000:ce4.91 sc0.00 mon6.16 | s12250:ce5.43 sc0.01 mon6.17 | s12500:ce4.94 sc0.00 mon6.17 | s12750:ce5.20 sc0.00 mon6.17 | s13000:ce5.29 sc0.01 mon6.16 | s13250:ce4.96 sc0.00 mon6.17 | s13500:ce4.85 sc0.00 mon6.17 | s13750:ce5.32 sc0.30 mon6.17 | s14000:ce5.06 sc0.59 mon6.17 | s14250:ce5.00 sc0.01 mon6.18 | s14500:ce5.13 sc0.73 mon6.17 | s14750:ce5.35 sc0.00 mon6.17 | s15000:ce5.43 sc0.00 mon6.16 | s15250:ce5.44 sc0.00 mon6.17 | s15500:ce5.13 sc0.01 mon6.17 | s15750:ce4.63 sc0.46 mon6.16 | s16000:ce5.09 sc0.42 mon6.19 | s16250:ce5.35 sc0.01 mon6.18 | s16500:ce5.26 sc0.00 mon6.18 | s16750:ce4.88 sc0.00 mon6.18 | s17000:ce5.12 sc0.00 mon6.19 | s17250:ce4.66 sc0.00 mon6.18 | s17500:ce5.31 sc0.00 mon6.18 | s17750:ce4.98 sc0.00 mon6.19 | s18000:ce4.88 sc0.42 mon6.19 | s18250:ce5.14 sc0.00 mon6.19 | s18500:ce4.97 sc0.01 mon6.19 | s18750:ce4.80 sc0.00 mon6.19 | s19000:ce4.87 sc0.00 mon6.18 | s19250:ce4.99 sc0.00 mon6.19 | s19500:ce5.35 sc0.00 mon6.19 | s19750:ce5.11 sc0.00 mon6.20 | s20000:ce5.05 sc0.00 mon6.19
+
+判读: routing 显著>0.81 → 表示可被任务感知目标塑造；
+监控 CE 相对 6.08 的退化幅度 = 对比损失的语言代价。
+[saved] C:\Users\Jasson Han\WorkBuddy\2026-09-12-19-37-16\SNN34_distill\stage4_contrast_report.txt
