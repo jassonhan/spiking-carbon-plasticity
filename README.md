@@ -158,3 +158,19 @@ We retrofit a 34M causal language model (SpikingMiniLM: attention backbone + LIF
 ## 许可
 
 MIT License
+
+---
+
+## 2026-11 更新：60M MLP 线的架构结论（`60m_mlp/`）
+
+在 Stage3 规则选型（本 README 主体，34M SNN）之外，11 月验证了一条正交结论：
+**脉冲 FFN 本身是质量与吞吐的双重瓶颈**。
+
+- 消融（唯一变量：FFN 中段 LIF → ReLU，同权重同 LR 轨迹）：4000 步 val 6.151 → 5.769；
+  30000 步 5.334；继续 7 个周期到 **4.5711**（较 SNN 平台 6.1506 改善 **-1.58 / 26%**），吞吐 2.9×
+- 60M MLP 上复核 Stage3 规则：Hebbian -0.005（无方向）、token 级调质无改进、
+  **FA -0.08（仅微调 34%）** —— 与 v0.1.0 八轮排除法一致（FA 弱于输出层 LMS）
+- FA + dw 衰减（突触归一化的生物对应）在 60M 上达成**零遗忘的 4 任务持续学习闭环**
+  （平均峰值遗忘 -0.002，单任务最大退化 0.16%）
+
+→ 详细脚本、报告与日志见 [`60m_mlp/`](60m_mlp/README.md)。
